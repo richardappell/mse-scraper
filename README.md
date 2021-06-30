@@ -27,7 +27,7 @@ Required arguments:
   pages: specify number of pages to scrape. Default is one page.
   postdata: specify on/off for whether to pull date of the thread post and body of the post. This is added to reduce scrape time. Defaulr is off
   
-  %time for 5 pages of data was 20 seconds when on vs 4.26 seconds for off.
+  %time for 5 pages of data was 20 seconds when on vs 1.26 seconds for off.
 
 Report any issues to https://github.com/richardappell/mse-scraper//issues
 
