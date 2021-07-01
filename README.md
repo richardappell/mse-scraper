@@ -8,40 +8,35 @@ Uses BeautifulSoup for HTML parsing.
 
 This package is not available via pip. You must download or clone this repository in order to use it.
 
-Requirements
+Scrape all thread posts of moneysaavingexpert forum. Top level link is https://forums.moneysavingexpert.com/
 
-python +3 (developed using python@3.8.5)
-Installation
+**Requirements**
+  python +3 (developed using python@3.8.5)
+  Installation
 
-Clone this repository:
+**Clone this repository**
+  git clone https://github.com/richardappell/mse-scraper/.git
+  Install dependencies via pip:
 
-git clone https://github.com/richardappell/mse-scraper/.git
-Install dependencies via pip:
+  sudo pip install -r requirements.txt
 
-sudo pip install -r requirements.txt
 
-Scrape all thread posts of a phpBB based forum
-
-Required arguments:
+**Required arguments**
   url: Full URL to forum thread in string format.
   pages: specify number of pages to scrape. Default is one page.
-  postdata: specify on/off for whether to pull date of the thread post and body of the post. This is added to reduce scrape time. Defaulr is off
+  postdata: specify on/off for whether to pull date of the thread post and body of the post. This is added to reduce scrape time. Default is off
   
-  %time for 5 pages of data was 20 seconds when on vs 1.26 seconds for off.
+  %time for 5 pages of data was 207 seconds when on vs 1.26 seconds for off.
 
-Report any issues to https://github.com/richardappell/mse-scraper//issues
+Report any issues to https://github.com/richardappell/mse-scraper/issues
 
-Run tests:
+**Run tests**
+%time mse_scrape("https://forums.moneysavingexpert.com/categories/small-biz-charities-moneysaving", 5, "off")
 
-make test
-License
+**Example data**
+This is uploaded in the example folder
 
-MIT - Tomas Aparicio
-
-# mse-scraper
-
-
-# Objective
+**Objective**
 The webscraper pulls data from the moneysavingexpertforum. 
 
 #Options
